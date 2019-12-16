@@ -1,0 +1,63 @@
+td, th{
+    border:1px solid black;
+    text-align: center;
+}
+.map-container{
+    height:400px;
+}
+.city{
+    display:flex;
+    justify-content:space-around;
+    &__input{
+        flex-grow: .5;
+        border:1px solid lightblue;
+        border-radius:12px;
+        padding:10px;
+        transition: all .2s linear;
+        &:focus, &:active{
+            border-color:blue;
+            outline:none;
+        }
+    }
+    @media screen and (max-width:768px){
+        flex-direction: column;
+    }
+}
+.result{
+    display:none;
+        &__visible{
+            display:block;
+            
+        }
+}
+.calc-button{
+    width:200px;
+    padding:5px;
+    margin:auto;
+    margin-top:10px;
+    color:white;
+    background-color:darken(grey, 30%);
+    border-radius:10px;
+    &:focus, &:active{
+        outline:none;
+    }
+}
+.logistic-data__table{
+    & table{
+        border:1px solid black;
+        border-collapse: collapse;
+    }
+    @media screen and (max-width:768px){
+        overflow:auto;
+    }
+   
+}
+.logistic-data__dist{
+    font-size:16px;
+}
+.logistic-table__head{
+    background: #194A99;
+}
+.logistic-table__head th.logistic-table__head__cell{
+    color:#fff;
+}

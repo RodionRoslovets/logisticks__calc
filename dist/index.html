@@ -1,0 +1,41 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=c3721370-ec0b-4b53-89c0-35ea9134f4f9&amp;lang=ru_RU" type="text/javascript"></script>
+  <link href="./assets/css/main.css" rel="stylesheet"></head>
+  <body>
+    <div class="calc">
+      <div class="city">
+        <input class="city__input" id="from" placeholder="Откуда" value="">
+        <input class="city__input" id="to" placeholder="Куда" value="">
+      </div>
+      <button class="calc-button">Рассчитать</button>
+      <div class="result">
+        <div class="result__logistic-data">
+          <p class="logistic-data__dist">
+            <div class="logistic-data__table">
+              <table>
+                <thead class="logistic-table__head">
+                  <tr class="logistic-table__head__row">
+                    <th class="logistic-table__head__cell">1.5 тонны/9 куб.м.</th>
+                    <th class="logistic-table__head__cell">3 тонн/15 куб.м.</th>
+                    <th class="logistic-table__head__cell">5 тонн/20-30 куб.м.</th>
+                    <th class="logistic-table__head__cell">10 тонн/30-40 куб.м.</th>
+                    <th class="logistic-table__head__cell">20 тонн/82-92 куб.м.</th>
+                  </tr>
+                </thead>
+                <tbody class="logistic-table__body"></tbody>
+                <tfoot class="logistic-table__footer"></tfoot>
+              </table>
+            </div>
+          </p>
+        </div>
+        <div class="map-container" id="map"></div>
+      </div>
+    </div>
+  <script type="text/javascript" src="./assets/js/main.js"></script></body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        script(src="https://api-maps.yandex.ru/2.1/?apikey=c3721370-ec0b-4b53-89c0-35ea9134f4f9&lang=ru_RU" type="text/javascript")
+    body
+        .calc
+            .city
+                input#from.city__input(placeholder="Откуда" value="")
+                input#to.city__input(placeholder="Куда" value="")
+            button.calc-button Рассчитать
+            .result
+                .result__logistic-data
+                    p.logistic-data__dist
+                        .logistic-data__table
+                            table
+                                thead.logistic-table__head
+                                    tr.logistic-table__head__row
+                                        th.logistic-table__head__cell 1.5 тонны/9 куб.м.
+                                        th.logistic-table__head__cell 3 тонн/15 куб.м.
+                                        th.logistic-table__head__cell 5 тонн/20-30 куб.м.
+                                        th.logistic-table__head__cell 10 тонн/30-40 куб.м.
+                                        th.logistic-table__head__cell 20 тонн/82-92 куб.м.
+                                tbody.logistic-table__body
+                                tfoot.logistic-table__footer
+                #map.map-container
+        //- p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis laudantium impedit maxime sequi quas alias architecto odio quia natus quam exercitationem facilis consequuntur est voluptatum voluptatem dolores quo soluta?
